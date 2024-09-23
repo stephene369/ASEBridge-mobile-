@@ -1,0 +1,156 @@
+{
+    "caption": "This is literally the first post, showing my laptop slowing down and freezing because it's overheating while working on this application, with a non-responsive window.",
+    "tags": [
+        "coding",
+        "learning",
+        "happiness"
+    ],
+    "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/66dcc4290013b1600f97/files/66e00bc2000144424be7/preview?width=2000&height=2000&gravity=top&quality=100&project=66dc9b3c003c275c9bda",
+    "imageId": "66e00bc2000144424be7",
+    "location": "ASE-Benin (library)",
+    "$id": "66df489500362ada6b54",
+    "$createdAt": "2024-09-09T19:12:22.157+00:00",
+    "$updatedAt": "2024-09-10T18:07:34.370+00:00",
+    "$permissions": [
+        "read(\"user:66dddcfc0039fb3f0405\")",
+        "update(\"user:66dddcfc0039fb3f0405\")",
+        "delete(\"user:66dddcfc0039fb3f0405\")"
+    ],
+    "creator": {
+        "name": "Stephene WANTCHEKON",
+        "username": "stephene",
+        "accountId": "66dddcfc0039fb3f0405",
+        "email": "stephenew36@gmail.com",
+        "bio": "Stephene WANTCHEKON\n\nStudent in MMES - ASE (Benin) \n\nPhone: +229 60 87 77 28 \n\nEmail: stephenew36@gmail.com",
+        "imageId": "66e0c06b001f339dffcb",
+        "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/66dcc4290013b1600f97/files/66e0c06b001f339dffcb/preview?width=2000&height=2000&gravity=top&quality=100&project=66dc9b3c003c275c9bda",
+        "$id": "66dddcfd00267716f10e",
+        "$createdAt": "2024-09-08T17:21:02.021+00:00",
+        "$updatedAt": "2024-09-10T21:59:02.293+00:00",
+        "$permissions": [],
+        "liked": [
+            {
+                "caption": "This is literally the first post, showing my laptop slowing down and freezing because it's overheating while working on this application, with a non-responsive window.",
+                "tags": [
+                    "coding",
+                    "learning",
+                    "happiness"
+                ],
+                "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/66dcc4290013b1600f97/files/66e00bc2000144424be7/preview?width=2000&height=2000&gravity=top&quality=100&project=66dc9b3c003c275c9bda",
+                "imageId": "66e00bc2000144424be7",
+                "location": "ASE-Benin (library)",
+                "$id": "66df489500362ada6b54",
+                "$createdAt": "2024-09-09T19:12:22.157+00:00",
+                "$updatedAt": "2024-09-10T18:07:34.370+00:00",
+                "$permissions": [
+                    "read(\"user:66dddcfc0039fb3f0405\")",
+                    "update(\"user:66dddcfc0039fb3f0405\")",
+                    "delete(\"user:66dddcfc0039fb3f0405\")"
+                ],
+                "$databaseId": "66ddc4d4003704d695dd",
+                "$collectionId": "66ddd6ee001791c930e1"
+            }
+        ],
+        "save": [
+            {
+                "$id": "66e09f19002a50e0837c",
+                "$createdAt": "2024-09-10T19:33:46.010+00:00",
+                "$updatedAt": "2024-09-10T19:33:46.010+00:00",
+                "$permissions": [
+                    "read(\"user:66dddcfc0039fb3f0405\")",
+                    "update(\"user:66dddcfc0039fb3f0405\")",
+                    "delete(\"user:66dddcfc0039fb3f0405\")"
+                ],
+                "$databaseId": "66ddc4d4003704d695dd",
+                "$collectionId": "66ddd6f9000c1c04dfab"
+            }
+        ],
+        "$databaseId": "66ddc4d4003704d695dd",
+        "$collectionId": "66ddd70f00040f4a0c2f"
+    },
+    "likes": [
+        {
+            "name": "Stephene WANTCHEKON",
+            "username": "stephene",
+            "accountId": "66dddcfc0039fb3f0405",
+            "email": "stephenew36@gmail.com",
+            "bio": "Stephene WANTCHEKON\n\nStudent in MMES - ASE (Benin) \n\nPhone: +229 60 87 77 28 \n\nEmail: stephenew36@gmail.com",
+            "imageId": "66e0c06b001f339dffcb",
+            "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/66dcc4290013b1600f97/files/66e0c06b001f339dffcb/preview?width=2000&height=2000&gravity=top&quality=100&project=66dc9b3c003c275c9bda",
+            "$id": "66dddcfd00267716f10e",
+            "$createdAt": "2024-09-08T17:21:02.021+00:00",
+            "$updatedAt": "2024-09-10T21:59:02.293+00:00",
+            "$permissions": [],
+            "users": [
+                {
+                    "caption": "This is literally the first post, showing my laptop slowing down and freezing because it's overheating while working on this application, with a non-responsive window.",
+                    "tags": [
+                        "coding",
+                        "learning",
+                        "happiness"
+                    ],
+                    "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/66dcc4290013b1600f97/files/66e00bc2000144424be7/preview?width=2000&height=2000&gravity=top&quality=100&project=66dc9b3c003c275c9bda",
+                    "imageId": "66e00bc2000144424be7",
+                    "location": "ASE-Benin (library)",
+                    "$id": "66df489500362ada6b54",
+                    "$createdAt": "2024-09-09T19:12:22.157+00:00",
+                    "$updatedAt": "2024-09-10T18:07:34.370+00:00",
+                    "$permissions": [
+                        "read(\"user:66dddcfc0039fb3f0405\")",
+                        "update(\"user:66dddcfc0039fb3f0405\")",
+                        "delete(\"user:66dddcfc0039fb3f0405\")"
+                    ],
+                    "$databaseId": "66ddc4d4003704d695dd",
+                    "$collectionId": "66ddd6ee001791c930e1"
+                }
+            ],
+            "save": [
+                {
+                    "$id": "66e09f19002a50e0837c",
+                    "$createdAt": "2024-09-10T19:33:46.010+00:00",
+                    "$updatedAt": "2024-09-10T19:33:46.010+00:00",
+                    "$permissions": [
+                        "read(\"user:66dddcfc0039fb3f0405\")",
+                        "update(\"user:66dddcfc0039fb3f0405\")",
+                        "delete(\"user:66dddcfc0039fb3f0405\")"
+                    ],
+                    "$databaseId": "66ddc4d4003704d695dd",
+                    "$collectionId": "66ddd6f9000c1c04dfab"
+                }
+            ],
+            "$databaseId": "66ddc4d4003704d695dd",
+            "$collectionId": "66ddd70f00040f4a0c2f"
+        }
+    ],
+    "save": [
+        {
+            "$id": "66e09f19002a50e0837c",
+            "$createdAt": "2024-09-10T19:33:46.010+00:00",
+            "$updatedAt": "2024-09-10T19:33:46.010+00:00",
+            "$permissions": [
+                "read(\"user:66dddcfc0039fb3f0405\")",
+                "update(\"user:66dddcfc0039fb3f0405\")",
+                "delete(\"user:66dddcfc0039fb3f0405\")"
+            ],
+            "user": {
+                "name": "Stephene WANTCHEKON",
+                "username": "stephene",
+                "accountId": "66dddcfc0039fb3f0405",
+                "email": "stephenew36@gmail.com",
+                "bio": "Stephene WANTCHEKON\n\nStudent in MMES - ASE (Benin) \n\nPhone: +229 60 87 77 28 \n\nEmail: stephenew36@gmail.com",
+                "imageId": "66e0c06b001f339dffcb",
+                "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/66dcc4290013b1600f97/files/66e0c06b001f339dffcb/preview?width=2000&height=2000&gravity=top&quality=100&project=66dc9b3c003c275c9bda",
+                "$id": "66dddcfd00267716f10e",
+                "$createdAt": "2024-09-08T17:21:02.021+00:00",
+                "$updatedAt": "2024-09-10T21:59:02.293+00:00",
+                "$permissions": [],
+                "$databaseId": "66ddc4d4003704d695dd",
+                "$collectionId": "66ddd70f00040f4a0c2f"
+            },
+            "$databaseId": "66ddc4d4003704d695dd",
+            "$collectionId": "66ddd6f9000c1c04dfab"
+        }
+    ],
+    "$databaseId": "66ddc4d4003704d695dd",
+    "$collectionId": "66ddd6ee001791c930e1"
+}
