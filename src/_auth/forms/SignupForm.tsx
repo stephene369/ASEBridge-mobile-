@@ -84,9 +84,8 @@ function SignupForm() {
         <img src={logo} alt="logo" width={190}/>
         <h2 className='h3-bold md:h2-bold pt-5 sm:pt-12'>Create new account</h2>
         <p className='text-light-5 text-center small-medium md:base-regular mt-2'>
-
-
-          To start using ASE Com, enter your details to create an account and connect with current and former ASE students across the globe. Share updates, explore opportunities, and grow your network within the ASE community.
+          
+          To start using ASE Bridge, enter your details to create an account and connect with current and former ASE students across the globe. Share updates, explore opportunities, and grow your network within the ASE community.
 
         </p>
 

@@ -81,7 +81,7 @@ const SigninForm = () => {
           Welcome back! Please sign in to join the community.
         </p>
         <p className='text-light-5 text-center small-medium md:base-regular mt-2'>
-          This is a beta version, and we would greatly appreciate your feedback.
+          {/* This is a beta version, and we would greatly appreciate your feedback. */}
         </p>
         <form
           onSubmit={form.handleSubmit(handleSignin)}

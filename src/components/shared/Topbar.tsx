@@ -13,9 +13,9 @@ const Topbar = () => {
     const navigate = useNavigate();
     const { user } = useUserContext();
 
-    console.log(
-        "Je suis user" ,user
-    )
+    // console.log(
+    //     "Je suis user" ,user
+    // )
 
     //console.log(user)
     useEffect(() => {
@@ -26,7 +26,7 @@ const Topbar = () => {
 
     return (
         <section className="topbar">
-            <div className="flex-between py-4 px-5 bg">
+            <div className="flex-between py-3 px-5 bg bg-opacity-60">
                 <Link to='/asebridge/' className="flex gap-3 items-center">
                     <img src={logo} alt="logo"
                         width={110}

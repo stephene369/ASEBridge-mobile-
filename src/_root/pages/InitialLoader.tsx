@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { Loader } from 'lucide-react';
 import { useUserContext } from '@/context/AuthContext';
+import Lottie from 'react-lottie-player'
+import lottieJson from "/asebridge/assets/js/Animation - 1727072262647.json"
 
 
 const InitialLoader: React.FC = () => {
@@ -45,8 +46,12 @@ const InitialLoader: React.FC = () => {
   return (
     <div className={`fixed inset-0 z-51 flex flex-col items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm ${!isLoading && isOnline ? 'hidden' : ''}`}>
       <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-        <Loader />
-        <p className="mt-4 text-lg font-semibold text-gray-800 dark:text-gray-200">
+      <Lottie
+          loop
+          animationData={lottieJson}
+          play
+          style={{ width: 150, height: 150 }}
+        />        <p className="mt-4 text-lg font-semibold text-gray-800 dark:text-gray-200">
           {isLoading ? 'Loading...' : isOnline ? 'Connecting...' : 'No internet connection'}
         </p>
       </div>
