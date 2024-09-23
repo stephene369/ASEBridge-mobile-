@@ -80,7 +80,7 @@ function SignupForm() {
   return (
     <Form {...form}>
 
-      <div className="sm:w-420 flex-center flex-col m-8">
+      <div className="sm:w-420 flex-center flex-col m-10">
         <img src={logo} alt="logo" width={190}/>
         <h2 className='h3-bold md:h2-bold pt-5 sm:pt-12'>Create new account</h2>
         <p className='text-light-5 text-center small-medium md:base-regular mt-2'>
