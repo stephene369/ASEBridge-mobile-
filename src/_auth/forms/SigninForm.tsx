@@ -60,7 +60,8 @@ const SigninForm = () => {
 
   return (
     <Form {...form}>
-      <div className="sm:w-420 flex-center flex-col m-16">
+      <div className="sm:w-420 h-full flex-center flex-col m-16">
+        
         <img src={logo} alt="logo"
           width={190}
         />
@@ -81,7 +82,7 @@ const SigninForm = () => {
           Welcome back! Please sign in to join the community.
         </p>
         <p className='text-light-5 text-center small-medium md:base-regular mt-2'>
-          {/* This is a beta version, and we would greatly appreciate your feedback. */}
+          This is a beta version, and we would greatly appreciate your feedback.
         </p>
         <form
           onSubmit={form.handleSubmit(handleSignin)}
