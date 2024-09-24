@@ -171,9 +171,9 @@
     @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-1 md:px-8 lg:p-14 ;
   }
 
-  /* All Users */
+  /* All Users */ 
   .user-container {
-    @apply max-w-5xl flex flex-col items-start w-full gap-5 px-5 md:gap-9;
+    @apply max-w-5xl flex flex-col items-start w-full gap-5 px-4 md:gap-9;
   }
 
   .user-grid {
@@ -182,7 +182,7 @@
 
   /* Explore */
   .explore-container {
-    @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
+    @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-1 md:p-1 custom-scrollbar;
   }
 
   .explore-inner_container {
@@ -304,7 +304,7 @@
 
   /* User card */
   .user-card {
-    @apply flex-center flex-col gap-2 border border-dark-4 rounded-[20px] px-3 py-4;
+    @apply flex-center flex-col gap-2 border border-dark-4 rounded-[20px] px-0 py-5;
     background-color: white;
   }
 }
