@@ -14,6 +14,7 @@ import { useSignInAccount } from '../../lib/react-query/queriesAndMutations'
 import { useUserContext } from '../../context/AuthContext'
 import { useCreateUserAccount } from "../../lib/react-query/queriesAndMutations"
 import logo from "/asebridge/assets/images/ase.png"
+import { useState } from "react"
 
 function SignupForm() {
   const { toast } = useToast()
@@ -22,6 +23,8 @@ function SignupForm() {
   const { mutateAsync: createUserAccount, isPending: isCreatingUser } = useCreateUserAccount();
   const { mutateAsync: signInAccount } = useSignInAccount();
   const { checkAuthUser } = useUserContext();
+  const [showPassword, setShowPassword] = useState(false);
+
 
 
 
@@ -139,9 +142,26 @@ function SignupForm() {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Password</FormLabel>
+                <FormLabel className="shad-form_label">Password</FormLabel>
                 <FormControl>
-                  <Input type='text' className='shad-input' {...field} />
+                  <div className="relative">
+                    <Input
+                      type={showPassword ? "text" : "password"}
+                      className="shad-input pr-10"
+                      {...field}
+                    />
+                    <button
+                      type="button"
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                      onClick={() => setShowPassword(!showPassword)}
+                    >
+                      {showPassword ? (
+                        <i className='bx bx-hide'></i>
+                      ) : (
+                        <i className='bx bx-show'></i>
+                      )}
+                    </button>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>

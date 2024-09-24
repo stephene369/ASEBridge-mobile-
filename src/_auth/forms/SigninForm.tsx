@@ -13,13 +13,14 @@ import { useToast } from '../../hooks/use-toast'
 import { useSignInAccount } from '../../lib/react-query/queriesAndMutations'
 import { useUserContext } from '../../context/AuthContext'
 import logo from "/asebridge/assets/images/ase.png"
-
+import { useState } from "react"
 
 const SigninForm = () => {
 
   const { toast } = useToast();
   const navigate = useNavigate();
   const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
+  const [showPassword, setShowPassword] = useState(false);
 
   // Query
   const { mutateAsync: signInAccount, isPending } = useSignInAccount();
@@ -61,7 +62,7 @@ const SigninForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 h-full flex-center flex-col m-10">
-        
+
         <img src={logo} alt="logo"
           width={190}
         />
@@ -86,7 +87,7 @@ const SigninForm = () => {
               <FormItem>
                 <FormLabel className="shad-form_label">Email</FormLabel>
                 <FormControl>
-                  <Input type="email" className="shad-input" {...field} autoComplete="username" />
+                  <Input type="text" className="shad-input" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -100,7 +101,24 @@ const SigninForm = () => {
               <FormItem>
                 <FormLabel className="shad-form_label">Password</FormLabel>
                 <FormControl>
-                  <Input type="password" className="shad-input" {...field} autoComplete="current-password" />
+                  <div className="relative">
+                    <Input
+                      type={showPassword ? "text" : "password"}
+                      className="shad-input pr-10"
+                      {...field}
+                    />
+                    <button
+                      type="button"
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                      onClick={() => setShowPassword(!showPassword)}
+                    >
+                      {showPassword ? (
+                        <i className='bx bx-hide'></i>
+                      ) : (
+                        <i className='bx bx-show'></i>
+                      )}
+                    </button>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
