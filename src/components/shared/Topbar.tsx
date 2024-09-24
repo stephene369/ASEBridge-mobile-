@@ -29,15 +29,16 @@ const Topbar = () => {
             <div className="flex-between py-3 px-5 bg-opacity-0">
                 <Link to='/asebridge/' className="flex gap-3 items-center">
                     <img src={logo} alt="logo"
-                        width={110}
+                        width={100}
                         // height={325}
                     />
                 </Link>
 
                 <div className="flex gap-4">
-                    <Button variant='ghost' className='shad-button_ghost'
+                    <Button  className='bg-transparent flex-col m-0 p-0'
                         onClick={() => signOut()}>
-                        <img src={logoutIcon} alt="logout" />
+                        <i className='bx bx-log-out text-[rgb(255,0,0)] text-2xl'></i>
+                        {/* <span className='text-light-1 text-[8px]'>LogOut</span> */}
                     </Button>
 
                     <Link to={`/asebridge/profile/${user.id}`} className='flex-center gap-3' >

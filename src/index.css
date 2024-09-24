@@ -68,6 +68,11 @@
   }
 }
 
+.dark-mode-toggle {
+  @apply p-2 rounded-full bg-light-2 dark:bg-dark-2 text-dark-1 dark:text-light-1 transition-colors duration-200;
+}
+
+
 @layer utilities {
   /* TYPOGRAPHY */
   .h1-bold {
