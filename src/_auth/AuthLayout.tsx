@@ -10,7 +10,7 @@ function AuthLayout() {
         isAuthenticated ?
           <Navigate to='/asebridge/' /> : (
             <>
-              <section className='flex flex-1 justify-start items-start flex-col py-10 h-full bg-white overflow-y-auto'>
+              <section className='flex flex-1 justify-start items-center flex-col py-10 h-full bg-white overflow-y-auto'>
                 <Outlet />
               </section>
               <img
