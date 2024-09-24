@@ -15,15 +15,17 @@ const InitialLoader: React.FC = () => {
   useEffect(() => {
     const checkConnection = async () => {
       if (navigator.onLine) {
-        setTimeout(() => {
-          setIsOnline(true);
-          setIsLoading(true);
-        }, 4000);
+        setIsOnline(true);
+        setIsLoading(true);
         const isAuthenticated = await checkAuthUser();
-        if (isAuthenticated) {
-          navigate('/asebridge');
-        }
-        setIsLoading(false);
+        
+        // Attendre 4 secondes supplémentaires avant de rediriger
+        setTimeout(() => {
+          if (isAuthenticated) {
+            navigate('/asebridge');
+          }
+          setIsLoading(false);
+        }, 4000);
       } else {
         setIsOnline(false);
         setIsLoading(false);
@@ -46,14 +48,15 @@ const InitialLoader: React.FC = () => {
   }, [navigate, checkAuthUser]);
 
   return (
-    <div className={`fixed inset-0 z-51 flex flex-col items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm ${!isLoading && isOnline ? 'hidden' : ''}`}>
+    <div className={`fixed inset-0 z-51 flex flex-col items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm ${!isLoading && !isOnline ? 'hidden' : ''}`}>
       <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
       <Lottie
           loop
           animationData={lottieJson}
           play
           style={{ width: 150, height: 150 }}
-        />        <p className="mt-4 text-lg font-semibold text-gray-800 dark:text-gray-200">
+        />        
+        <p className="mt-4 text-lg font-semibold text-gray-800 dark:text-gray-200">
           {isLoading ? 'Loading...' : isOnline ? 'Connecting...' : 'No internet connection'}
         </p>
       </div>
