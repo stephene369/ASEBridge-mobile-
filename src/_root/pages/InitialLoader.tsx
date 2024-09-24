@@ -19,7 +19,9 @@ const InitialLoader: React.FC = () => {
         setIsLoading(true);
         const isAuthenticated = await checkAuthUser();
         if (isAuthenticated) {
-          navigate('/asebridge');
+          setTimeout(() => {
+            navigate('/asebridge');
+          }, 3000);
         }
         setIsLoading(false);
       } else {
