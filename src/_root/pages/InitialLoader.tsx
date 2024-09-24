@@ -19,8 +19,6 @@ const InitialLoader: React.FC = () => {
           setIsOnline(true);
           setIsLoading(true);
         }, 4000);
-        setIsOnline(true);
-        setIsLoading(true);
         const isAuthenticated = await checkAuthUser();
         if (isAuthenticated) {
           navigate('/asebridge');
