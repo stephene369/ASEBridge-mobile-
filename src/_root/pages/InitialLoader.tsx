@@ -15,13 +15,15 @@ const InitialLoader: React.FC = () => {
   useEffect(() => {
     const checkConnection = async () => {
       if (navigator.onLine) {
+        setTimeout(() => {
+          setIsOnline(true);
+          setIsLoading(true);
+        }, 4000);
         setIsOnline(true);
         setIsLoading(true);
         const isAuthenticated = await checkAuthUser();
         if (isAuthenticated) {
-          setTimeout(() => {
-            navigate('/asebridge');
-          }, 3000);
+          navigate('/asebridge');
         }
         setIsLoading(false);
       } else {
