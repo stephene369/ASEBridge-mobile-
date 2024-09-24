@@ -28,7 +28,7 @@ const InitialLoader: React.FC = () => {
       }
     };
 
-    const timer = setTimeout(checkConnection, 80000);
+    const timer = setTimeout(checkConnection, 2000);
 
     const handleOnline = () => {
       setIsOnline(true);
