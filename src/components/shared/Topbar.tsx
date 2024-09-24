@@ -24,7 +24,7 @@ const Topbar = () => {
     }, [isSuccess])
 
     return (
-        <section className="bg-opacity-0">
+        <section className="topbar bg-opacity-0">
             <div className="flex-between py-3 px-5 bg-opacity-0">
                 <Link to='/asebridge/' className="flex gap-3 items-center">
                     <img src={logo} alt="logo"

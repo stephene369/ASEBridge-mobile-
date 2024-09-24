@@ -1,5 +1,5 @@
 import { Outlet, Navigate } from 'react-router-dom';
-
+import studentImg from "/asebridge/assets/images/side.jpeg"
 
 function AuthLayout() {
   const isAuthenticated = false;
@@ -14,7 +14,7 @@ function AuthLayout() {
                 <Outlet />
               </section>
               <img
-                src='/asebridge/assets/images/side.jpeg'
+                src={studentImg}
                 alt='logo'
                 className='hidden xl:block h-screen w-1/2 object-cover bg-no-repeat'
               />
