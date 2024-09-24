@@ -75,7 +75,7 @@ const Profile = () => {
             </div>
 
             <p className="small-medium md:base-medium text-center xl:text-left mt-7 max-w-screen-sm">
-              {currentUser.bio}
+              {currentUser.bio ? currentUser.bio : '-'}
             </p>
           </div>
 
@@ -98,9 +98,9 @@ const Profile = () => {
               </Link>
             </div>
             <div className={`${user.id === id && "hidden"}`}>
-              <Button type="button" className="shad-button_primary px-8 " disabled>
+              {/* <Button type="button" className="shad-button_primary px-8 " disabled>
                 Follow
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

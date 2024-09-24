@@ -70,8 +70,8 @@ const UpdateProfile = () => {
 
   return (
     <div className="flex flex-1">
-      <div className="common-container">
-        <div className="flex-start gap-3 justify-start w-full max-w-5xl">
+      <div className="common-container mx-6 ">
+        <div className="flex-start gap-3 justify-start w-full max-w-5xl ">
           <i className='bx bx-edit' style={{ fontSize: '36px', color: 'black' }}></i>
           <h2 className="h3-bold md:h2-bold text-left w-full">Edit Profile</h2>
         </div>

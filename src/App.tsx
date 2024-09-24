@@ -17,6 +17,7 @@ import UpdateProfile from './_root/pages/UpdateProfile'
 import InternetCheck from './_root/pages/InternetChecker'
 import InternetWrapper from './_root/pages/InternetWrapper'
 import InitialLoader from './_root/pages/InitialLoader'
+import LikedPosts from './_root/pages/LikedPosts'
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
             <Route path='/asebridge/posts/:id' element={<PostDetails />} />
             <Route path='/asebridge/profile/:id/*' element={<Profile />} />
             <Route path='/asebridge/update-profile/:id' element={<UpdateProfile />} />
+            <Route path='/asebridge/profile/id/liked-posts' element={<LikedPosts />} />
 
 
 

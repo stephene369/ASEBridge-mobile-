@@ -4,7 +4,6 @@ import { Button } from '../ui/button';
 import { useSignOutAccount } from '../../lib/react-query/queriesAndMutations';
 import { useUserContext } from '../../context/AuthContext';
 import logo from "/asebridge/assets/images/ase.png"
-import logoutIcon from "/asebridge/assets/icons/logout.svg"
 import profilePlaceholder from "/asebridge/assets/icons/profile-placeholder.svg"
 
 
