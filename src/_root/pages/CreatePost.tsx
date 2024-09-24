@@ -3,7 +3,7 @@ import { PostForm } from '../../components/forms/PostForm'
 const CreatePost = () => {
   return (
     <div className="flex flex-1">
-      <div className="common-container ">
+      <div className="common-container mx-4 ">
         <div className='max-w-5xl flex-start gap-3 justify-start w-full '>
           <svg
             xmlns="http://www.w3.org/2000/svg"

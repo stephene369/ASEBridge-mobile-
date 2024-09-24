@@ -173,7 +173,7 @@
 
   /* All Users */ 
   .user-container {
-    @apply max-w-5xl flex flex-col items-start w-full gap-5 px-4 md:gap-9;
+    @apply max-w-5xl flex flex-col items-center justify-center w-full gap-5 px-4 md:gap-9;
   }
 
   .user-grid {
@@ -182,7 +182,7 @@
 
   /* Explore */
   .explore-container {
-    @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-1 md:p-1 custom-scrollbar;
+    @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-1 mx-4 md:p-1 custom-scrollbar;
   }
 
   .explore-inner_container {
