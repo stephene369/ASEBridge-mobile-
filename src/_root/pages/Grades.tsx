@@ -1,10 +1,29 @@
 import { Button } from '@/components/ui/button'
 import { Loader } from 'lucide-react'
 import React from 'react'
+import { Filesystem, Directory } from '@capacitor/filesystem';
 
+const fetchAndSaveCSV = async () => {
+  try {
+    const response = await fetch('https://www.stats.govt.nz/assets/Uploads/Business-operations-survey/Business-operations-survey-2022/Download-data/business-operations-survey-2022-business-finance.csv');
+    if (!response.ok) {
+      throw new Error('Erreur lors du téléchargement du fichier CSV.');
+    }
 
+    const csvData = await response.text();
 
+    // Enregistrer le fichier localement avec Capacitor
+    await Filesystem.writeFile({
+      path: 'data.csv',
+      data: csvData,
+      directory: Directory.Data
+    });
 
+    console.log('Fichier CSV téléchargé et enregistré avec succès.');
+  } catch (error) {
+    console.error('Erreur lors du téléchargement ou de la sauvegarde du fichier CSV :', error);
+  }
+};
 
 
 function Grades() {
@@ -19,11 +38,12 @@ function Grades() {
             </div>
 
             <div className=''>
-                <Button type="button" className="h-12 bg-dark-4 px-5 text-light-1 flex-center gap-2 rounded-lg">
+                <Button type="button" 
+                    className="h-12 bg-dark-4 px-5 text-light-1 flex-center gap-2 rounded-lg hover:bg-neutral-500"
+                    onClick={()=>fetchAndSaveCSV()}
+                    >
                     Update
                 </Button>
-
-
 
 
             </div>
