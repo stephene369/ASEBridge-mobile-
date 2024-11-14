@@ -11,7 +11,6 @@ import {
 import LikedPosts from "./LikedPosts";
 import GridPostList from "../../components/shared/GridPostList";
 import { useGetUserById } from "../../lib/react-query/queriesAndMutations";
-import { Button } from "../../components/ui/button";
 
 import profilePlaceholderSrc from "/asebridge/assets/icons/profile-placeholder.svg";
 import editIconSrc from "/asebridge/assets/icons/edit.svg";
