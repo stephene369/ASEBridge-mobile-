@@ -9,3 +9,5 @@ android/
 ios/
 
 key*
+.env
+.env.local
