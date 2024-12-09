@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# unset _JAVA_OPTIONS
-# npm run build
-# npx cap sync android
-# npx cap copy android
-# npx cap run android
-# #npx cap open android
-# cd ./android         
-# ./gradlew bundleRelease
-# cd ..
+unset _JAVA_OPTIONS
+npm run build
+npx cap sync android
+npx cap copy android
+npx cap run android
+#npx cap open android
+cd ./android         
+./gradlew bundleRelease
+cd ..
 
 
 git add .

@@ -6,7 +6,6 @@ import { getCurrentUser } from '@/lib/appwrite/api';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 function Home() {
   const { data: posts, isPending: isPostLoading } = useGetRecentPosts()
 

@@ -326,6 +326,22 @@
     background: #f1f1f1;
     border-radius: 8%;
   }
+
+  .dropdown- {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 300px;
+    transform: translateX(-45%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+    background: #f1f1f1;
+    border-radius: 8%;
+  }
   .icon-button i{
     font-size: 1.4rem;
   }

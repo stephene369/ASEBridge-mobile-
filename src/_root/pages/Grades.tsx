@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 import { useUserContext } from "../../context/AuthContext";
 import { json } from 'stream/consumers';
 import { object } from 'zod';
-
-
+import { useToast } from '@/hooks/use-toast';
+import { ToastAction } from '@/components/ui/toast';
+import toast from 'react-hot-toast';
 
 function Grades() {
   const { user } = useUserContext();
@@ -35,7 +36,8 @@ function Grades() {
 
   const fetchData = async (userId: any) => {
     try {
-      const response = await fetch('https://cloud.appwrite.io/v1/storage/buckets/6734f75c0029042ea147/files/exemple/view?project=66dc9b3c003c275c9bda&project=66dc9b3c003c275c9bda&mode=admin');
+      const id_ = country + '-' + program + '-' + selectedSemester
+      const response = await fetch(`https://cloud.appwrite.io/v1/storage/buckets/6734f75c0029042ea147/files/${id_}/view?project=66dc9b3c003c275c9bda&project=66dc9b3c003c275c9bda&mode=admin`);
       const data = await response.text();
 
       // Conversion du CSV en tableau
@@ -53,10 +55,9 @@ function Grades() {
       // Filtrage par userId
       const filteredData = jsonData.filter(item => item['ID'] === userId);
       setData(filteredData); setIsData(true)
-      console.log(typeof (filteredData))
+      Array.isArray(filteredData) && filteredData.length > 0 ? '' : toast.error(`Nothing found. Please try later.`)
+      console.log((id_))
       console.log('Données filtrées correspondant à userId:', filteredData);
-
-      console.log('Fichier CSV téléchargé et traité avec succès.');
     } catch (error) {
       console.error('Erreur lors du téléchargement ou du traitement du fichier CSV :', error);
     };
@@ -134,16 +135,17 @@ function Grades() {
 
 
       <>
-        {isData ? (
+        {isData && Array.isArray(Data) && Data.length > 0 ? (
           <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-lg">
             <thead className="bg-gray-100 border-b">
               <tr>
-                {/* Génère l'en-tête de tableau en utilisant les clés de la première entrée, sans afficher 'ID' */}
+
                 {Object.keys(Data[0]).filter(key => key !== 'ID').map((key, index) => (
                   <th key={index} className="px-4 py-2 text-left font-semibold text-gray-700">
                     {key}
                   </th>
                 ))}
+
               </tr>
             </thead>
             <tbody>
@@ -190,8 +192,13 @@ function Grades() {
             </tbody>
           </table>
         ) : (
-          'Empty'
+
+          <div>
+            <div>Empty</div>
+          </div>
+
         )}
+
       </>
 
 

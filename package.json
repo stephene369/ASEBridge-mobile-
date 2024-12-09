@@ -8,9 +8,9 @@
     "mobile"
   ],
   "dependencies": {
-    "@capacitor/android": "^6.1.2",
-    "@capacitor/cli": "latest",
-    "@capacitor/core": "latest",
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
     "@capacitor/filesystem": "^6.0.1",
     "@capacitor/ios": "^6.1.2",
     "@capacitor/network": "^6.0.2",
@@ -21,6 +21,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-toast": "^1.2.1",
     "@tanstack/react-query": "^5.56.2",
+    "add": "^2.0.6",
     "appwrite": "^15.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -29,6 +30,7 @@
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.53.0",
+    "react-hot-toast": "^2.4.1",
     "react-intersection-observer": "^9.13.1",
     "react-lottie-player": "^2.1.0",
     "react-router-dom": "^6.26.2",

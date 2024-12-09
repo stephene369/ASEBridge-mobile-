@@ -19,6 +19,7 @@ import InternetWrapper from './_root/pages/InternetWrapper'
 import InitialLoader from './_root/pages/InitialLoader'
 import LikedPosts from './_root/pages/LikedPosts'
 import Grades from './_root/pages/Grades'
+import { Toaster as T } from 'react-hot-toast';
 
 const App = () => {
   return (
@@ -59,6 +60,7 @@ const App = () => {
 
       </Routes>
       <Toaster />
+      <T/>
     </main>
     </InternetWrapper>
 

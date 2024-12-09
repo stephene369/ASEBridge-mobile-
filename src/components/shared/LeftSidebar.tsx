@@ -5,20 +5,58 @@ import { INavLink } from '../../types';
 
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { Button } from '../ui/button';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const LeftSidebar = () => {
   const { user } = useUserContext();
   const { mutate: signOut, isSuccess } = useSignOutAccount();
   const { pathname } = useLocation();
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
 
 
   useEffect(() => {
     if (isSuccess) {
-        navigate(0)
+      navigate(0)
     }
-}, [isSuccess])
+  }, [isSuccess])
+
+
+  function DropDownMenu() {
+    return (
+      <div className="dropdown-">
+
+        <a href={`/asebridge/profile/${user.id}`} className='menu-item'>
+          <span className='icon-button'>
+            <i className='bx bx-detail' ></i>
+          </span>
+
+          <span>
+            Profil Details
+          </span>
+        </a>
+
+        <a href={`/asebridge/grades`} className='menu-item'>
+          <span className='icon-button'>
+            <i className='bx bxs-graduation' ></i>
+          </span>
+
+          <span>
+            Grades
+          </span>
+        </a>
+
+        <a onClick={() => signOut()} className='menu-item'>
+          <span className='icon-button'>
+            <i className='bx bx-log-out'></i>
+          </span>
+          <span>Log Out</span>
+        </a>
+
+      </div>
+    );
+  }
+
 
   return (
     <nav className="leftsidebar">
@@ -30,12 +68,16 @@ const LeftSidebar = () => {
           />
         </Link>
 
-        <Link to={`/asebridge/profile/${user.id}`} className='flex gap-3 items-center'>
-          <img
-            className='h-14 w-14 rounded-full'
-            src={user.imageUrl || '/asebridge/assets/icons/profile-placeholder.svg'}
-            alt="profile"
-          />
+        <div className='flex gap-3 items-center'  onClick={
+            () => setOpen(!open)
+          } >
+
+          <a className='flex-center gap-3'>
+            <img className='h-8 w-8 rounded-full'
+              src={user.imageUrl || '/asebridge/assets/icons/profile-placeholder.svg'} alt="profile" />
+
+            {open && <DropDownMenu />}
+          </a>
 
           <div className="flex flex-col">
             <p className="doby-bold">
@@ -45,7 +87,7 @@ const LeftSidebar = () => {
               @{user.username}
             </p>
           </div>
-        </Link>
+        </div>
 
         <ul className="flex flex-col gap-6">
           {sidebarLinks.map(
@@ -61,7 +103,8 @@ const LeftSidebar = () => {
                   >
                     <img src={link.imgURL} alt={link.label}
                       className={`group-hover:invert-white ${isActive && 'invert-white'
-                        }`} />
+                        }`}
+                    />
                     {link.label}
 
                   </NavLink>
